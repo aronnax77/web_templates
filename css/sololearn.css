@@ -10,12 +10,18 @@ for any site.
 
 
 GENERAL STYLING                - html elements and shared styles
+INFO ICON AND PANEL            - styling for info icon and panel
+FOOTER                         - styling for footer
 
 
 COLOUR PALETTE
 
-orange                - header background - delete or modify as necessary
-lightyellow           - body background   - delete or modify as necessary
+white                 - background for header, article and footer
+silver                - body background appears as borders
+rgb(230, 230, 230)    - background for info panel
+rgb(100, 100, 100)    - advisory text at base of info panel 
+
+############ To be deleted ############
 red                   - header border to aid design - delete or modify as necessary
 blue                  - article border to aid design - delete or modify as necessary
 green                 - section border to aid design - delete or modify as necessary
@@ -53,11 +59,11 @@ header {
 
 article {
   width: 90vw;
-  min-height: 100vh;
   margin: 0 auto;
+  min-height: 100vh;
   padding-top: 20px;
   padding-bottom: 50px;
-  background-color: rgba(255, 255, 255, 1);
+  background-color: white;
   border: 4px solid blue; /* SWITCH */
 }
 
@@ -67,8 +73,8 @@ hr {
 
 section {
   margin: 2%;
-  height: 300px;
-  border: 4px solid green; /* SWITCH */
+  /*height: 300px; /* switch */
+  /*border: 4px solid green; /* SWITCH */
 }
 
 footer {
@@ -81,6 +87,43 @@ footer {
 }
 /* General styling ends */
 
+
+/******************************************************************************
+ Info icon and panel begins
+******************************************************************************/
+/* This class is provided by googles material-icons */
+p .material-icons {
+  font-size: 50px;
+}
+
+section.info-icon-and-panel {
+  text-align: right;
+	/*padding-top: 30px;
+  padding-right: 30px;*/
+}
+
+#information-panel-text {
+  display: none;
+	overflow: hidden;
+  padding: 20px;
+  text-align: justify;
+  border-radius: 15px;
+  background-color: rgb(230, 230, 230);
+  color: rgb(100, 100, 100);
+  font-size: 16px;
+}
+
+.advisory-text {
+  text-align: right;
+  font-style: italic;
+  font-size: 12px;
+}
+/* Info icon and panel ends */
+
+
+/******************************************************************************
+ Footer begins
+******************************************************************************/
 .footnote {
   position: absolute;
   right: 5vw;
@@ -93,3 +136,4 @@ footer {
   top: 0;
   left: 2.5vw;
 }
+/* Footer ends */

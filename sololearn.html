@@ -3,7 +3,11 @@
 <head>
   <!-- update the next two lines as needed -->
   <link rel="stylesheet" href="css/sololearn.css">
-  <script src="css/sololearn.js"></script>
+  <script src="js/sololearn.js"></script>
+
+  <!-- Reference material-icons style sheet -->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+          rel="stylesheet">
   <meta charset="UTF-8">
   <title>SoloLearn</title>
 </head>
@@ -16,7 +20,31 @@
   <!-- ARTICLE -->
   <article>
     <hr>
-    <section></section>
+    <section class="info-icon-and-panel">
+      <p><a href='#' onclick="showInfo('information-panel-text')"><i class="material-icons">
+      info</i></a></p>
+
+      <div id='information-panel-text'>
+
+        <p>The shapes on this page are not images.  They are created using css
+           only.  Perhaps the most surprising of these shapes are the triangles
+           which are shown at the end of the display.  Once the basic ideas
+           regarding these shapes is understood it is possible to use them for
+           a number of purposes including the simple animations shown in the
+           title bar, buttons and decorations.  With imagination it is possible
+           to make composite shapes into and all manner of images.</p>
+
+        <p>This particular page was inspired by an article written
+           by <a href='https://davidwalsh.name/css-circles' target='_blank'>David Walsh</a>
+           who presents a number of interesting articles on the use of css and
+           other related ariticles in his blog pages DWB.
+        </p>
+        <p class='advisory-text'>To close this pannel please left click the info icon
+           agian.</p>
+
+      </div>
+
+    </section>
     <section></section>
   </article>
   <!-- FOOTER -->
