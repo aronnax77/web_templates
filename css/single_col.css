@@ -30,31 +30,39 @@ Note: https://autoprefixer.github.io was used to add the prefixed additions in
 /******************************************************************************
   General styling begins
 ******************************************************************************/
-/** {
-  box-sizing: border-box;
-}*/
-
-header {
-  background-color: orange; /* SWITCH */
-  text-align: center;
-  font-size: 1.5vw;
-  height: 150px;
-  margin-top: 0;
-  border: 4px solid red; /* SWITCH */
+* {
+  -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+          box-sizing: border-box;
 }
 
 body {
-  background-color: lightyellow;
+  background-color: silver;
+}
+
+header {
+  width: 90vw;
+  margin: 0 auto;
+  background-color: white; /* SWITCH */
+  text-align: center;
+  font-size: 1.5vw;
+  height: 150px;
+  padding: 20px 0;
+  border: 4px solid red; /* SWITCH */
 }
 
 article {
-  position: relative;
-  top: 0;
-  left: 5vw;
   width: 90vw;
-  height: 100vh;
+  min-height: 100vh;
+  margin: 0 auto;
+  padding-top: 20px;
+  padding-bottom: 50px;
   background-color: rgba(255, 255, 255, 1);
   border: 4px solid blue; /* SWITCH */
+}
+
+hr {
+  width: 85vw;
 }
 
 section {
@@ -65,9 +73,11 @@ section {
 
 footer {
   position: relative;
-  bottom: 0;
-  background-color: #999999;
+  width: 90vw;
+  margin: 0 auto;
+  background-color: white; /* SWITCH */
   height: 150px;
   border: 4px solid yellow; /* SWITCH */
 }
 /* General styling ends */
+}
