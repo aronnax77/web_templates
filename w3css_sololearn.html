@@ -15,26 +15,30 @@
 <body class="w3-display-container w3-light-grey">
 
   <div class="w3-row">
-    <div id="middle" class="w3-display-topmiddle w3-display-container w3-card-4 w3-col s12 m8 w3-white">
+    <div id="middle" class="w3-display-topmiddle w3-display-container
+    w3-card-4 w3-col s12 m8 w3-white">
       <header class="w3-container w3-center">
         <h1>Title</h1>
       </header>
       <hr>
       <br>
-      <section class="w3-container w3-right-align w3-large w3-padding-large">
+      <section class="w3-container w3-right-align w3-large">
         <a href="#" onclick="reveal_hide('panel')">
-          <i class="material-icons w3-xxlarge w3-text-blue w3-right-align">info</i></a>
+          <i class="material-icons w3-xxlarge w3-text-blue
+          w3-right-align w3-padding-large">info</i></a>
         <br>
         <br>
-        <div id="panel" class="w3-container w3-round-large w3-hide w3-sand w3-padding-16">
+        <div id="panel" class="w3-container w3-round-large w3-hide w3-left-align w3-sand w3-padding-16">
           <p>This is an example of the use of a JavaScript routine to reveal and
           hide a section within the page using w3.css classes.  The JavaScript
           code is shown under the JavaScript tab and is a modified version of
           that found at
           <a href="https://www.w3schools.com/w3css/tryit.asp?filename=tryw3css_display_show_toggle"
           target="_blank">w3schools</a>.</p>
-            <p>The css styling for the page is almost entirely from w3.css
-              supplemented by a normal css file to help the layout styling.</p>
+          <p>The css styling for the page is almost entirely from w3.css
+            supplemented by a normal css file to help the layout styling.</p>
+            <p class='w3-right-align w3-small w3-text-blue'>To close this pannel please left click the info icon
+                agian.</p>
         </div>
       </section>
       <footer class="w3-col m12 w3-display-bottommiddle">
