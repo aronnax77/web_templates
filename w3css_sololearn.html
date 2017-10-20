@@ -1,9 +1,5 @@
-<!-- an example inspired by w3schools and a first attempt to use w3.css as a
-general tool for page layout.
-
-Author: Richard Myatt
-Date: 17 October 2017
-
+<!-- Author: Richard Myatt
+     Date: 17 October 2017
 -->
 <!DOCTYPE html>
 <html lang="en">
@@ -16,23 +12,21 @@ Date: 17 October 2017
   <title>SoloLearn</title>
   <script src="js/w3css_sololearn.js"></script>
 </head>
-<body class="w3-light-grey">
+<body class="w3-display-container w3-light-grey">
 
   <div class="w3-row">
-    <div id="left" class="w3-col m2"><p></p></div>
-    <div id="middle" class="w3-display-container w3-card-4 w3-col s12 m8 w3-white">
+    <div id="middle" class="w3-display-topmiddle w3-display-container w3-card-4 w3-col s12 m8 w3-white">
       <header class="w3-container w3-center">
         <h1>Title</h1>
       </header>
+      <hr>
       <br>
-      <section class="w3-container w3-right-align w3-large">
+      <section class="w3-container w3-right-align w3-large w3-padding-large">
         <a href="#" onclick="reveal_hide('panel')">
-          <i class="material-icons w3-xxxlarge w3-text-blue w3-right-align">info</i></a>
-        <!--<button class="w3-button w3-blue w3-round" onclick="reveal_hide('panel')">
-          Reveal/Hide</button>-->
+          <i class="material-icons w3-xxlarge w3-text-blue w3-right-align">info</i></a>
         <br>
         <br>
-        <div id="panel" class="w3-container w3-hide w3-yellow w3-padding-16">
+        <div id="panel" class="w3-container w3-round-large w3-hide w3-sand w3-padding-16">
           <p>This is an example of the use of a JavaScript routine to reveal and
           hide a section within the page using w3.css classes.  The JavaScript
           code is shown under the JavaScript tab and is a modified version of
@@ -44,16 +38,16 @@ Date: 17 October 2017
         </div>
       </section>
       <footer class="w3-col m12 w3-display-bottommiddle">
-        <div class="w3-col m10">
+        <hr>
+        <div class="w3-col s8 m10">
           <p></p>
         </div>
-        <div class="w3-col m2 w3-tiny">
+        <div class="w3-col s4 m2 w3-tiny">
           <p>Author: Richard Myatt</p>
           <p>Date: 27 September 2017</p>
         </div>
       </footer>
     </div>
-    <div id="right" class="w3-col m2""><p></p></div>
 
   </div>
 
